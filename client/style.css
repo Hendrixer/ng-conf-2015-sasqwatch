@@ -1,0 +1,76 @@
+main {
+  padding-left: 20vw;
+  color: #efefef;
+  padding-top: 30px;
+}
+
+.toasted {
+  background-color: #78909c;
+}
+.sas-count {
+  position: fixed;
+  top: 16vh;
+  left: 78vw;
+  min-width: 22vw;
+}
+
+.sas-count .card-title {
+  text-align: center;
+}
+
+.card-image {
+  text-align: center;
+}
+
+.nav-link {
+  height: 10vh;
+  text-align: center;
+  font-size: 2em;
+  padding: 5px;
+}
+
+ul.side-nav li:hover, ul.side-nav li.active.nav-link:hover, ul.side-nav li.active.nav-link {
+  background-color: #263238 !important;
+}
+
+ul.side-nav li:hover a, ul.side-nav li.active.nav-link:hover a {
+  color: #3f51b5;
+}
+
+.sm-img {
+  min-width: 120px !important;
+}
+
+.page-title {
+  margin-left: 50px;
+}
+
+.side-nav * {
+  color: white !important;
+}
+
+.demo-card {
+  cursor: pointer;
+  margin-right: 5px;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  -o-user-select: none;
+  user-select: none;
+}
+
+.red-text, .redText {
+  color: #f44336;
+}
+
+.blue-text {
+  color: #3f51b5;
+}
+
+span {
+  color: white;
+}
+
+input[type=text], textarea {
+  font-size: 2em !important;
+}

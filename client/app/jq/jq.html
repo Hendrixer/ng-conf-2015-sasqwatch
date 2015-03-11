@@ -1,0 +1,24 @@
+<div id="child" class="row">
+  <h3>stop ng-ing everything</h3>
+  <div class="col s10">
+    <div class="row">
+
+      <!-- ng-mouseenter will cause a digest everytime -->
+      <!-- <div ng-repeat="card in cards" class="card col s3 blue-grey darken-3 demo-card"
+      ng-mouseenter="onMouseEnter($event, $even)">
+        <div class="card-title">
+          <h5>{{ card.title }}</h5>
+        </div>
+      </div> -->
+
+
+      <div ng-repeat="card in cards" class="card col s3 blue-grey darken-3 demo-card"
+      on-mouse-enter="onMouseEnter($event, $even)">
+        <div class="card-title">
+          <h5>{{ card.title }}</h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

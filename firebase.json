@@ -1,0 +1,9 @@
+{
+  "firebase": "sasqwatch",
+  "public": "client",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

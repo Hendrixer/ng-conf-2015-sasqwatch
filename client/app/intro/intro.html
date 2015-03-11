@@ -1,0 +1,22 @@
+<div id="child" class="row">
+  <h3>count the $$watchers</h3>
+  <div class="col s10">
+    <div class="row">
+    
+      <div class="input-field col s9">
+        <input id="filter" type="text" ng-model="search">
+        <label for="filter">filter</label>
+      </div>
+      
+      <div class="card col s3 blue-grey darken-3 demo-card"
+        ng-repeat="num in nums | filter:search"
+        ng-click="splice($index)">
+        
+        <div class="card-content" ng-class="{redText: $even}" >
+          {{ num.title }}
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

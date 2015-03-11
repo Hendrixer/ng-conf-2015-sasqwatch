@@ -1,0 +1,81 @@
+<div id="child" class="row">
+  <div class="col s10">
+    
+    <!-- no -->
+    <!-- <div class="row">
+      
+      <div class="col s6">
+        <a class="waves-effect waves-teal btn-large"
+          ng-click="editMode = !editMode">
+          toggle
+        </a>
+      </div>
+      
+      <div class="title col s6">
+        <h3 ng-show="editMode">Edit mode</h3>
+        <h3 ng-hide="editMode">View mode</h3>
+      </div>
+      
+      <div ng-show="editMode" class="card col s6 blue-grey darken-3 demo-card">
+        <div class="card-content row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea" ng-model="desc"></textarea>
+            <label for="textarea1">Admin stuff</label>
+          </div>
+        </div>
+      </div>
+      
+      <div ng-hide="editMode" class="col s6 card col s6 blue-grey darken-3 demo-card">
+        <div class="card-title">
+          <h4>message of the day</h4>
+        </div>
+        <div class="card-content">
+          <p>{{ desc }}</p>
+        </div>
+      </div>
+      
+    </div> -->
+    
+    
+    <!-- OPTIMIZE -->
+    <div class="col s6">
+      <a class="waves-effect waves-teal btn-large" ng-click="editMode = !editMode">toggle</a>
+    </div>
+    
+    <div class="row" ng-if="editMode">
+      
+      <div class="title col s6">
+        <h3>Edit mode</h3>
+      </div>
+      
+      <div class="card col s6 blue-grey darken-3 demo-card">
+        <div class="card-content row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea" ng-model="desc"></textarea>
+            <label for="textarea1">Admin stuff</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row" ng-if="!editMode">
+      
+      <div class="title col s6">
+        <h3>View mode</h3>
+      </div>
+      
+      <div class="col s6 card col s6 blue-grey darken-3 demo-card">
+        <div class="card-title">
+          <h4>message of the day</h4>
+        </div>
+        
+        <div class="card-content">
+          <p>{{ desc }}</p>
+        </div>
+      </div>
+      
+    </div> 
+    <!-- done -->
+    
+  </div>
+</div>
